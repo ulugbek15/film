@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="shortcut icon" href="./img/fims-logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    
+    
+    
+    <header class="header">
+        <div class="container">
+            <h1 class="film__title"> I<span class="title__movie">Movie</span></h1>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="film">
+            <div class="container">
+                <form class="film__form">
+                    <input value="hulk" type="text" class="film__search" placeholder="search film">
+                    <select class="film__select">
+                        <option value="movie">Movie</option>
+                        <option value="series">Series</option>
+                    </select>
+                    <button class="form__btn" type="submit">Search</button>
+                </form>
+                
+                <ul class="film__card-wrapper">
+                    
+                </ul>
+                <div class="button-group"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy IMovie 2021</p> 
+    </footer>
+    
+    
+    <template id="template">    
+        <li class="film__card-item">
+            <img class="film__card-img" src="http://picsum.photos/250/300" alt="img" width="250" height="300">
+            <h2 class="film__sub-title">Films Title</h2>
+        </li>
+    </template>
+    
+    
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

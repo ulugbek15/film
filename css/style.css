@@ -1,0 +1,125 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Noto Sans Mono', monospace;
+    /* background-color: #45969B; */
+}
+.main{
+    flex-grow: 1;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+.spinner{
+    margin: 0 auto;
+
+}
+.film__card-img{
+    width: 100%;
+    border-radius: 4px;
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    padding: 5px 0px;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+.film{
+    margin-top: 70px;
+}
+.film__title{
+    text-align: center;
+    font-weight: bold;
+}
+.title__movie{
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #F45905;
+    color: #fff;
+}
+.film__card-item{
+    cursor: pointer;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    width: 216px;
+    padding: 7px 5px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    
+}
+.film__card-item:nth-child(5n){
+    margin-right: 0;
+}
+.film__card-wrapper{
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.film__card-item:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.film__search{
+    width: 74%;
+    padding: 10px;
+    font-size: 17px;
+}
+.film__select{
+    padding: 9px;
+    font-size: 17px;
+}
+.button-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.film__pagination-btn{
+    background-color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    margin-right: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.film__pagination-btn:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.film__pagination-btn:last-child{
+    margin-right: 0;
+}
+.footer{
+    padding: 10px;
+    text-align: center;
+}
+.form__btn{
+    width: 150px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    padding: 13px;
+    font-size: 17px;
+    background-color:#1597E5;
+}
+.form__btn:hover{
+    background-color:#113CFC;
+}
