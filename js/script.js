@@ -48,7 +48,7 @@ function renderMovies(arr, element){
             
             newImg.setAttribute('src', film.Poster)
             newImg.onerror = (e) => {
-                e.target.src = 'https://via.placeholder.com/250x300/?text=Img+NotFound'
+                e.target.src = 'http://via.placeholder.com/250x300/?text=Img+NotFound'
             }
             newTtle.textContent = film.Title
             
