@@ -84,10 +84,10 @@ function renderBtn(arr, element){
 
 
 function fetchMovies(){
-    fetch(`http://www.omdbapi.com/?apikey=${APIKEY}&s=${searchedFilm}&type=${filmType}&page=${pageCount}`)
+    fetch(`https://www.omdbapi.com/?apikey=${APIKEY}&s=${searchedFilm}&type=${filmType}&page=${pageCount}`)
     .then(res => res.json())
     .then(data => {
-        elList.innerHTML = `<img class="spinner" src='../img/spinner.svg' width="150" height="150"/>`
+        elList.innerHTML = `<img class="spinner" src='./img/spinner.svg' width="150" height="150"/>`
         setTimeout(() =>{
             if(data){
                 renderMovies(data.Search, elList)
