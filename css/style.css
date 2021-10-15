@@ -93,6 +93,7 @@ ul{
     cursor: pointer;
     width: 45px;
     height: 45px;
+    margin-bottom: 7px;
     border-radius: 4px;
     border: none;
     font-weight: bold;
